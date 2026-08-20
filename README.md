@@ -74,10 +74,12 @@ Inclui uso de **Maven** e **NetBeans**.
 
 ## 🎓 Formação
 
-### 📚 Análise e Desenvolvimento de Sistemas
+### 📚 Desenvolvimento de Sistemas
+
 Atualmente construindo minha formação na área de desenvolvimento de software.
 
 ### 💻 Estudos complementares
+
 - SENAI  
 - SENAC  
 - DIO  
@@ -86,6 +88,7 @@ Atualmente construindo minha formação na área de desenvolvimento de software.
 ---
 
 ## 📊 Estatísticas do GitHub
+
 <div align="center"> 
   <img src="./profile/stats.svg" height="180em" alt="Estatísticas do GitHub"> 
   <img src="./profile/top-langs.svg" height="180em" alt="Principais linguagens"> 
@@ -94,12 +97,14 @@ Atualmente construindo minha formação na área de desenvolvimento de software.
 ---
 
 ## 🎯 Objetivo
+
 Meu objetivo é continuar evoluindo como profissional de tecnologia, desenvolver projetos cada vez mais completos e conquistar uma oportunidade na área de **desenvolvimento de software**.  
 Busco transformar conhecimento em prática, construir um portfólio consistente e evoluir continuamente como desenvolvedor.
 
 ---
 
 ## 📫 Vamos nos conectar?
+
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sajoco-afk)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](SEU_LINKEDIN)
 
