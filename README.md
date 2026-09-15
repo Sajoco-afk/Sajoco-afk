@@ -125,12 +125,6 @@ Atualmente construindo minha formação na área de desenvolvimento de software.
   <img height="180em" src="./profile/top-langs.svg" alt="Principais linguagens">
 </div>
 
-### 🔥 GitHub Streak
-
-<div align="center">
-  <img height="195em" src="./profile/streak.svg" alt="GitHub Streak">
-</div>
-
 ### 🐍 Gráfico de contribuições
 
 <div align="center">
