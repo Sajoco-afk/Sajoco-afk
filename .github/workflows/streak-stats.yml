@@ -1,39 +1,41 @@
-name: Atualizar streak do GitHub
+name: Atualizar perfil
 
 on:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "0 4 * * *"
   workflow_dispatch:
-  push:
-    paths:
-      - ".github/workflows/streak-stats.yml"
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v6
 
-      - name: Gerar streak
+      - name: Gerar Streak
         uses: zients/github-readme-streak-stats@v2
         with:
           options: user=${{ github.repository_owner }}&theme=tokyonight&disable_animations=true
           path: profile/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Salvar streak
+      - name: Gerar gráfico de contribuições
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            profile/github-snake.svg
+            profile/github-snake-dark.svg?palette=github-dark
+
+      - name: Salvar arquivos
         run: |
-          git add profile/streak.svg
-          if git diff --cached --quiet -- profile/streak.svg; then
-            echo "Nenhuma alteração no streak."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Atualizar streak do GitHub"
+
+          git add profile/*.svg
+          git commit -m "Atualizar streak e gráfico de contribuições" || exit 0
           git push
